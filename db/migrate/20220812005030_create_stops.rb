@@ -4,7 +4,7 @@ class CreateStops < ActiveRecord::Migration[7.0]
       t.string :name
       t.integer :line_id
       t.integer :stop_id
-      t.boolean :is_accesible
+      t.boolean :is_accessible
       t.boolean :towards_loop
 
       t.timestamps
