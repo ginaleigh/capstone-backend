@@ -1,11 +1,11 @@
 class StopsController < ApplicationController
   def index
-    @stops = Stops.all
+    @stops = Stop.all
     render json: @stops.as_json
   end
 
   def show
-    @stops = Stops.find(params[:id])
+    @stops = Stop.find(params[:id])
     render json: @stops.as_json
   end
 end

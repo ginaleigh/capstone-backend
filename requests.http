@@ -1,0 +1,23 @@
+
+### Lines Index
+GET http://localhost:3000/lines.json
+
+### Stops Index
+GET http://localhost:3000/stops.json
+
+### Lines Show
+GET http://localhost:3000/lines/1.json
+
+### Stops Show
+GET http://localhost:3000/stops/1.json
+
+### Users create (signup)
+POST http://localhost:3000/users.json
+Content-Type: application/json
+
+{
+  "name": "Test name",
+  "email": "test@test.com",
+  "password": "password",
+  "password_confirmation": "password"
+}

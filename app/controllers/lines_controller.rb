@@ -1,11 +1,11 @@
 class LinesController < ApplicationController
   def index
-    @lines = Lines.all
+    @lines = Line.all
     render json: @lines.as_json
   end
 
   def show
-    @lines = Lines.find(params[:id])
+    @lines = Line.find(params[:id])
     render json: @lines.as_json
   end
 end
