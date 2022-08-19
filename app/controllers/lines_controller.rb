@@ -8,4 +8,6 @@ class LinesController < ApplicationController
     @lines = Line.find(params[:id])
     render json: @lines.as_json
   end
+
+  p hey
 end
