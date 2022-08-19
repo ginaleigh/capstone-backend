@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get "/lines/:id" => "lines#show"
 
   get "/stops" => "stops#index"
-  get "/stops/:id" => "stops#show"
-  
-  get "/arrival_times" =>"stops#arrival_times"
+  get "/stops/:parent_id" => "stops#show"
+
+  get "/arrival_times" => "stops#arrival_times"
 end

@@ -9,7 +9,7 @@ GET http://localhost:3000/stops.json
 GET http://localhost:3000/lines/1.json
 
 ### Stops Show
-GET http://localhost:3000/stops/1.json
+GET http://localhost:3000/stops/40890.json
 
 ### Arrival Times 
 GET http://localhost:3000/arrival_times?parent_id=41010

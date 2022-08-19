@@ -5,7 +5,7 @@ class StopsController < ApplicationController
   end
 
   def show
-    @stops = Stop.find(params[:id])
+    @stops = Stop.find_by(parent_id: params[:parent_id])
     render json: @stops.as_json
   end
 
