@@ -8,4 +8,11 @@ class StopsController < ApplicationController
     @stops = Stop.find(params[:id])
     render json: @stops.as_json
   end
+
+  def arrival_times
+    response = HTTP.get("http://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=#{Rails.application.credentials.cta_api[:api_key]}&mapid=#{params[:parent_id]}&outputType=JSON")
+    data = JSON.parse(response)
+    p data
+    render json: data
+  end
 end

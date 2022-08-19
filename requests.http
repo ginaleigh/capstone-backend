@@ -11,13 +11,18 @@ GET http://localhost:3000/lines/1.json
 ### Stops Show
 GET http://localhost:3000/stops/1.json
 
+### Arrival Times 
+GET http://localhost:3000/arrival_times?parent_id=41010
+
 ### Users create (signup)
 POST http://localhost:3000/users.json
 Content-Type: application/json
 
 {
-  "name": "Test name",
+  "first_name": "First name",
+  "last_name": "Last name",
   "email": "test@test.com",
   "password": "password",
   "password_confirmation": "password"
 }
+

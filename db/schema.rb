@@ -22,6 +22,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_12_005041) do
 
   create_table "stops", force: :cascade do |t|
     t.string "name"
+    t.integer "parent_id"
     t.integer "line_id"
     t.integer "stop_id"
     t.boolean "is_accessible"
