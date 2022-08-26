@@ -6,7 +6,7 @@ GET http://localhost:3000/lines.json
 GET http://localhost:3000/stops.json
 
 ### Lines Show
-GET http://localhost:3000/lines/1.json
+GET http://localhost:3000/lines/1.jsonrail
 
 ### Stops Show
 GET http://localhost:3000/stops/40890.json
